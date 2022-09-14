@@ -1,6 +1,10 @@
 import pyaudio  
-import wave  
+import wave
+import sys
 
+macros = []
+if sys.version_info[:2] >= (3, 10):  # https://bugs.python.org/issue40943
+    macros.append(("PY_SSIZE_T_CLEAN", None))
 
 def play_audio_sample():
     #define stream chunk   
