@@ -2,13 +2,15 @@
 name = "amp-profiler"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Ing. Juan Jose Nicola <jjnicola@gmail.com>"]
 readme = "README.md"
 packages = [{include = "amp_profiler"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 
+[tool.poetry.scripts]
+amp-profiler = "amp_profiler.profiler:main"
 
 [build-system]
 requires = ["poetry-core"]
