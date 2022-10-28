@@ -56,4 +56,4 @@ def create_audio_sample ():
     wavfile.write("profiler.wav", rate, complete.astype(np.int16))
 
 if __name__ == "__main__":
-    create_audio_sample_3 ()
+    create_audio_sample ()
